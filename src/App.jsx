@@ -31,12 +31,12 @@ function App() {
     {
       id: 3,
       title: 'AI-Generated API Service',
-      desc: 'Набор бэкенд-микросервисов для обработки медиафайлов, написанный нейросетью по моим архитектурным промптам и спецификациям.',
+      desc: 'Микросервис на FastAPI для мгновенного конвертирования JPEG/PNG изображений в формат иконок (.ico) с поддержкой мультиразрешений и веб-интерфейсом.',
       category: 'Microservices',
       tags: ['FastAPI', 'Python', 'Docker', 'Prompt Design'],
       image: 'https://images.unsplash.com/photo-1526374965328-7f61d4dc18c5?auto=format&fit=crop&w=600&q=80',
-      demoUrl: '#',
-      gitUrl: '#'
+      demoUrl: 'https://github.com/2w252/image-to-ico-converter#readme',
+      gitUrl: 'https://github.com/2w252/image-to-ico-converter'
     },
     {
       id: 4,
