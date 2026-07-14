@@ -2,50 +2,50 @@ import React, { useState, useEffect } from 'react'
 
 function App() {
   // Dynamic typing animation text
-  const titles = ['AI Engineer', 'LLM Specialist', 'MLOps Practitioner', 'RAG Architect'];
+  const titles = ['Prompt Engineer', 'AI Product Creator', 'AI Operator', 'AI Co-Creator'];
   const [titleIndex, setTitleIndex] = useState(0);
   const [currentText, setCurrentText] = useState('');
   const [isDeleting, setIsDeleting] = useState(false);
   const [typingSpeed, setTypingSpeed] = useState(150);
 
-  // Projects data (Customized for AI Engineer)
+  // Projects data (Customized for AI Operator / Prompt Engineer)
   const initialProjects = [
     {
       id: 1,
-      title: 'Advanced RAG Pipeline',
-      desc: 'Конвейер поиска ответов по локальным документам (PDF/TXT) с использованием LangChain, гибридного поиска (BM25 + FAISS Vector DB) и Llama 3.',
-      category: 'AI / LLMs',
-      tags: ['LangChain', 'Python', 'FAISS', 'Llama 3', 'FastAPI'],
+      title: 'Prompt-Crafted Portfolio',
+      desc: 'Интерактивное веб-портфолио (этот сайт), созданное в соавторстве с ИИ-агентом. Спроектировано через промпты, протестировано и развернуто полностью силами ИИ под моим руководством.',
+      category: 'AI Products',
+      tags: ['React', 'Prompt Engineering', 'AI Co-Creation', 'Vite'],
       image: 'https://images.unsplash.com/photo-1618005182384-a83a8bd57fbe?auto=format&fit=crop&w=600&q=80',
       demoUrl: '#',
       gitUrl: '#'
     },
     {
       id: 2,
-      title: 'Multi-Agent Swarm Coordinator',
-      desc: 'Оркестратор группы автономных ИИ-агентов (CrewAI / AutoGen) для автоматического написания и тестирования программного кода.',
-      category: 'AI / LLMs',
-      tags: ['CrewAI', 'Python', 'FastAPI', 'React', 'WebSocket'],
-      image: 'https://images.unsplash.com/photo-1526374965328-7f61d4dc18c5?auto=format&fit=crop&w=600&q=80',
+      title: 'Interactive Web Synth',
+      desc: 'Музыкальный синтезатор в браузере. Код полностью сгенерирован ИИ по детальным текстовым описаниям, баги устранены через итеративную отладку промптами.',
+      category: 'AI Products',
+      tags: ['Web Audio API', 'HTML5', 'AI Coding', 'QA Testing'],
+      image: 'https://images.unsplash.com/photo-1511671782779-c97d3d27a1d4?auto=format&fit=crop&w=600&q=80',
       demoUrl: '#',
       gitUrl: '#'
     },
     {
       id: 3,
-      title: 'Realtime CV Tracker',
-      desc: 'Система компьютерного зрения для обнаружения и отслеживания объектов на видеопотоке в реальном времени на базе YOLOv8 и PyTorch.',
-      category: 'Computer Vision',
-      tags: ['YOLOv8', 'PyTorch', 'OpenCV', 'Python', 'Docker'],
-      image: 'https://images.unsplash.com/photo-1507668077129-56e32842fceb?auto=format&fit=crop&w=600&q=80',
+      title: 'AI-Generated API Service',
+      desc: 'Набор бэкенд-микросервисов для обработки медиафайлов, написанный нейросетью по моим архитектурным промптам и спецификациям.',
+      category: 'Microservices',
+      tags: ['FastAPI', 'Python', 'Docker', 'Prompt Design'],
+      image: 'https://images.unsplash.com/photo-1526374965328-7f61d4dc18c5?auto=format&fit=crop&w=600&q=80',
       demoUrl: '#',
       gitUrl: '#'
     },
     {
       id: 4,
-      title: 'LLM Fine-Tuning Dashboard',
-      desc: 'Аналитическая панель для мониторинга процесса дообучения (Fine-Tuning) моделей с Hugging Face с интеграцией Weights & Biases.',
-      category: 'MLOps',
-      tags: ['React', 'Hugging Face', 'W&B', 'Node.js', 'Chart.js'],
+      title: 'Automated Content Workflow',
+      desc: 'Скрипты автоматизации для постинга контента, созданные нейросетью. Управление процессом разработки велось через фидбек-лупы и исправление ошибок ИИ.',
+      category: 'Automations',
+      tags: ['Python', 'LLM Automation', 'Product Management', 'API'],
       image: 'https://images.unsplash.com/photo-1551288049-bebda4e38f71?auto=format&fit=crop&w=600&q=80',
       demoUrl: '#',
       gitUrl: '#'
@@ -133,7 +133,7 @@ function App() {
               <span style={{ borderRight: '2px solid var(--neon-cyan)', animation: 'blink 0.7s infinite' }}></span>
             </h1>
             <p className="hero-desc">
-              Специализируюсь на проектировании архитектур искусственного интеллекта, внедрении LLM, разработке RAG-решений и MLOps автоматизации.
+              Специализируюсь на создании IT-продуктов с помощью нейросетей: проектирую архитектуру, пишу точные промпты, тестирую готовые решения и устраняю баги.
             </p>
             <div className="hero-cta">
               <a href="#projects" className="btn btn-primary">Мои работы</a>
@@ -149,7 +149,7 @@ function App() {
           </div>
 
           <div style={{ marginBottom: '2rem', display: 'flex', gap: '1rem', flexWrap: 'wrap', justifyContent: 'center' }}>
-            {['All', 'AI / LLMs', 'Computer Vision', 'MLOps'].map((cat) => (
+            {['All', 'AI Products', 'Microservices', 'Automations'].map((cat) => (
               <button
                 key={cat}
                 className={`btn ${filter === cat ? 'btn-primary' : 'btn-secondary'}`}
