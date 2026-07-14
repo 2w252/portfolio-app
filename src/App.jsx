@@ -222,11 +222,11 @@ function App() {
                     <div style={{ fontSize: '0.85rem', color: 'var(--text-muted)' }}>mega_work@example.com</div>
                   </div>
                 </a>
-                <a href="https://github.com" target="_blank" rel="noopener noreferrer" className="contact-method">
+                <a href="https://github.com/2w252" target="_blank" rel="noopener noreferrer" className="contact-method">
                   <span className="contact-icon">📂</span>
                   <div>
                     <div style={{ fontWeight: 600 }}>GitHub</div>
-                    <div style={{ fontSize: '0.85rem', color: 'var(--text-muted)' }}>github.com/mega_work</div>
+                    <div style={{ fontSize: '0.85rem', color: 'var(--text-muted)' }}>github.com/2w252</div>
                   </div>
                 </a>
               </div>
