@@ -129,7 +129,7 @@ function App() {
           <div className="hero-content">
             <div className="hero-subtitle">Приветствую, я разработчик</div>
             <h1 className="hero-title">
-              Создаю <span className="gradient-text">{currentText || '\u00A0'}</span>
+              <span className="gradient-text">{currentText || '\u00A0'}</span>
               <span style={{ borderRight: '2px solid var(--neon-cyan)', animation: 'blink 0.7s infinite' }}></span>
             </h1>
             <p className="hero-desc">
