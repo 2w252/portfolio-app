@@ -2,51 +2,51 @@ import React, { useState, useEffect } from 'react'
 
 function App() {
   // Dynamic typing animation text
-  const titles = ['React Developer', 'UI/UX Designer', 'Software Engineer', 'Frontend Specialist'];
+  const titles = ['AI Engineer', 'LLM Specialist', 'MLOps Practitioner', 'RAG Architect'];
   const [titleIndex, setTitleIndex] = useState(0);
   const [currentText, setCurrentText] = useState('');
   const [isDeleting, setIsDeleting] = useState(false);
   const [typingSpeed, setTypingSpeed] = useState(150);
 
-  // Projects data
+  // Projects data (Customized for AI Engineer)
   const initialProjects = [
     {
       id: 1,
-      title: 'NeonSynth',
-      desc: 'Интерактивный синтезатор в браузере, использующий Web Audio API. Чистый звук, кастомные визуализации и эффекты.',
-      category: 'Web',
-      tags: ['React', 'Web Audio API', 'CSS Grid', 'Canvas'],
-      image: 'https://images.unsplash.com/photo-1511671782779-c97d3d27a1d4?auto=format&fit=crop&w=600&q=80',
+      title: 'Advanced RAG Pipeline',
+      desc: 'Конвейер поиска ответов по локальным документам (PDF/TXT) с использованием LangChain, гибридного поиска (BM25 + FAISS Vector DB) и Llama 3.',
+      category: 'AI / LLMs',
+      tags: ['LangChain', 'Python', 'FAISS', 'Llama 3', 'FastAPI'],
+      image: 'https://images.unsplash.com/photo-1618005182384-a83a8bd57fbe?auto=format&fit=crop&w=600&q=80',
       demoUrl: '#',
       gitUrl: '#'
     },
     {
       id: 2,
-      title: 'AI Code Refactorer',
-      desc: 'Интеллектуальная утилита командной строки, анализирующая и оптимизирующая код с помощью больших языковых моделей.',
-      category: 'AI / Tools',
-      tags: ['Python', 'OpenAI API', 'CLI', 'Rich'],
+      title: 'Multi-Agent Swarm Coordinator',
+      desc: 'Оркестратор группы автономных ИИ-агентов (CrewAI / AutoGen) для автоматического написания и тестирования программного кода.',
+      category: 'AI / LLMs',
+      tags: ['CrewAI', 'Python', 'FastAPI', 'React', 'WebSocket'],
       image: 'https://images.unsplash.com/photo-1526374965328-7f61d4dc18c5?auto=format&fit=crop&w=600&q=80',
       demoUrl: '#',
       gitUrl: '#'
     },
     {
       id: 3,
-      title: 'Crypto Pulse',
-      desc: 'Мобильное приложение для отслеживания курсов криптовалют в реальном времени с поддержкой алертов.',
-      category: 'Mobile',
-      tags: ['React Native', 'TypeScript', 'Tailwind', 'Chart.js'],
-      image: 'https://images.unsplash.com/photo-1621761191319-c6fb62004040?auto=format&fit=crop&w=600&q=80',
+      title: 'Realtime CV Tracker',
+      desc: 'Система компьютерного зрения для обнаружения и отслеживания объектов на видеопотоке в реальном времени на базе YOLOv8 и PyTorch.',
+      category: 'Computer Vision',
+      tags: ['YOLOv8', 'PyTorch', 'OpenCV', 'Python', 'Docker'],
+      image: 'https://images.unsplash.com/photo-1507668077129-56e32842fceb?auto=format&fit=crop&w=600&q=80',
       demoUrl: '#',
       gitUrl: '#'
     },
     {
       id: 4,
-      title: 'SmartHome Dashboard',
-      desc: 'Панель управления умным домом. Визуализация датчиков в реальном времени через веб-сокеты.',
-      category: 'Web',
-      tags: ['React', 'Node.js', 'WebSockets', 'Chart.js'],
-      image: 'https://images.unsplash.com/photo-1558002038-1055907df827?auto=format&fit=crop&w=600&q=80',
+      title: 'LLM Fine-Tuning Dashboard',
+      desc: 'Аналитическая панель для мониторинга процесса дообучения (Fine-Tuning) моделей с Hugging Face с интеграцией Weights & Biases.',
+      category: 'MLOps',
+      tags: ['React', 'Hugging Face', 'W&B', 'Node.js', 'Chart.js'],
+      image: 'https://images.unsplash.com/photo-1551288049-bebda4e38f71?auto=format&fit=crop&w=600&q=80',
       demoUrl: '#',
       gitUrl: '#'
     }
@@ -133,7 +133,7 @@ function App() {
               <span style={{ borderRight: '2px solid var(--neon-cyan)', animation: 'blink 0.7s infinite' }}></span>
             </h1>
             <p className="hero-desc">
-              Специализируюсь на создании качественных веб-приложений на React с высокой производительностью и красивым интерактивным дизайном.
+              Специализируюсь на проектировании архитектур искусственного интеллекта, внедрении LLM, разработке RAG-решений и MLOps автоматизации.
             </p>
             <div className="hero-cta">
               <a href="#projects" className="btn btn-primary">Мои работы</a>
@@ -149,7 +149,7 @@ function App() {
           </div>
 
           <div style={{ marginBottom: '2rem', display: 'flex', gap: '1rem', flexWrap: 'wrap', justifyContent: 'center' }}>
-            {['All', 'Web', 'Mobile', 'AI / Tools'].map((cat) => (
+            {['All', 'AI / LLMs', 'Computer Vision', 'MLOps'].map((cat) => (
               <button
                 key={cat}
                 className={`btn ${filter === cat ? 'btn-primary' : 'btn-secondary'}`}
