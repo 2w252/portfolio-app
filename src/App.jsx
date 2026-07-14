@@ -35,7 +35,7 @@ function App() {
       category: 'Microservices',
       tags: ['FastAPI', 'Python', 'Docker', 'Prompt Design'],
       image: 'https://images.unsplash.com/photo-1526374965328-7f61d4dc18c5?auto=format&fit=crop&w=600&q=80',
-      demoUrl: 'https://github.com/2w252/image-to-ico-converter#readme',
+      demoUrl: 'http://mega-work-converter-2026.surge.sh',
       gitUrl: 'https://github.com/2w252/image-to-ico-converter'
     },
     {
