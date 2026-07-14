@@ -45,8 +45,8 @@ function App() {
       category: 'Automations',
       tags: ['Python', 'LLM Automation', 'Product Management', 'API'],
       image: 'https://images.unsplash.com/photo-1551288049-bebda4e38f71?auto=format&fit=crop&w=600&q=80',
-      demoUrl: '#',
-      gitUrl: '#'
+      demoUrl: 'http://mega-work-workflow-2026.surge.sh',
+      gitUrl: 'https://github.com/2w252/Automated-Content-Workflow'
     }
   ];
 
