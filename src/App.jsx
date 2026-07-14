@@ -15,7 +15,7 @@ function App() {
       category: 'AI Products',
       tags: ['React', 'Prompt Engineering', 'AI Co-Creation', 'Vite'],
       image: 'https://images.unsplash.com/photo-1618005182384-a83a8bd57fbe?auto=format&fit=crop&w=600&q=80',
-      demoUrl: 'http://mega-work-portfolio-2026.surge.sh',
+      demoUrl: 'https://2w252.github.io/portfolio-app/',
       gitUrl: 'https://github.com/2w252/portfolio-app'
     },
     {
@@ -25,7 +25,7 @@ function App() {
       category: 'AI Products',
       tags: ['Web Audio API', 'HTML5', 'AI Coding', 'QA Testing'],
       image: 'https://images.unsplash.com/photo-1511671782779-c97d3d27a1d4?auto=format&fit=crop&w=600&q=80',
-      demoUrl: 'http://mega-work-synth-2026.surge.sh',
+      demoUrl: 'https://2w252.github.io/Interactive-Web-Synth/',
       gitUrl: 'https://github.com/2w252/Interactive-Web-Synth'
     },
     {
@@ -35,7 +35,7 @@ function App() {
       category: 'Microservices',
       tags: ['FastAPI', 'Python', 'Docker', 'Prompt Design'],
       image: 'https://images.unsplash.com/photo-1526374965328-7f61d4dc18c5?auto=format&fit=crop&w=600&q=80',
-      demoUrl: 'http://mega-work-converter-2026.surge.sh',
+      demoUrl: 'https://2w252.github.io/image-to-ico-converter/',
       gitUrl: 'https://github.com/2w252/image-to-ico-converter'
     },
     {
@@ -45,7 +45,7 @@ function App() {
       category: 'Automations',
       tags: ['Python', 'LLM Automation', 'Product Management', 'API'],
       image: 'https://images.unsplash.com/photo-1551288049-bebda4e38f71?auto=format&fit=crop&w=600&q=80',
-      demoUrl: 'http://mega-work-workflow-2026.surge.sh',
+      demoUrl: 'https://2w252.github.io/Automated-Content-Workflow/',
       gitUrl: 'https://github.com/2w252/Automated-Content-Workflow'
     }
   ];
