@@ -25,8 +25,8 @@ function App() {
       category: 'AI Products',
       tags: ['Web Audio API', 'HTML5', 'AI Coding', 'QA Testing'],
       image: 'https://images.unsplash.com/photo-1511671782779-c97d3d27a1d4?auto=format&fit=crop&w=600&q=80',
-      demoUrl: '#',
-      gitUrl: '#'
+      demoUrl: 'http://mega-work-synth-2026.surge.sh',
+      gitUrl: 'https://github.com/2w252/Interactive-Web-Synth'
     },
     {
       id: 3,
