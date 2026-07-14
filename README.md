@@ -1,16 +1,37 @@
-# React + Vite
+# Prompt-Crafted Portfolio
 
-This template provides a minimal setup to get React working in Vite with HMR and some Oxlint rules.
+Это современное интерактивное веб-портфолио, спроектированное и разработанное в соавторстве человека и искусственного интеллекта (Google Antigravity).
 
-Currently, two official plugins are available:
+Сайт представляет собой пример концепции **AI Co-Creation**, где человек выступает в роли Product Manager / Prompt Engineer (определяет архитектуру, ставит задачи, проводит тестирование и отладку), а искусственный интеллект выступает в роли разработчика (пишет чистый код по спецификациям).
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Oxc](https://oxc.rs)
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/)
+## 🚀 Особенности
+*   **Стек:** React 19, Vite, Vanilla CSS (без тяжелых фреймворков для максимальной чистоты и производительности).
+*   **Дизайн:** Минималистичный темный стиль (Neon/Dark, Glassmorphic UI) с плавными градиентными свечениями на фоне.
+*   **Анимации:** Динамический эффект печатной машинки, интерактивные карточки проектов с эффектом наведения, плавные переходы.
+*   **Функциональность:** Фильтрация проектов по категориям, мгновенный поиск по тегам, рабочая форма обратной связи.
+*   **Портативность:** Проект был собран с использованием полностью портативных сред Node.js и Git без глобальной установки софта в ОС.
 
-## React Compiler
+## 🛠️ Локальный запуск
+Для работы с проектом требуется Node.js. Запустите следующие команды:
 
-The React Compiler is not enabled on this template because of its impact on dev & build performances. To add it, see [this documentation](https://react.dev/learn/react-compiler/installation).
+```bash
+# Установка зависимостей
+npm install
 
-## Expanding the Oxlint configuration
+# Запуск локального сервера разработки
+npm run dev
 
-If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and Oxlint's TypeScript related rules in your project.
+# Сборка проекта для продакшена
+npm run build
+```
+
+## 🌐 Деплой
+Сайт подготовлен для быстрого статического деплоя на любые хостинги (GitHub Pages, Surge, Netlify, Vercel).
+Для публикации на Surge:
+```bash
+npx surge ./dist --domain <ваше-имя>.surge.sh
+```
+Для публикации на GitHub Pages:
+```bash
+npm run deploy
+```

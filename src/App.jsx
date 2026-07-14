@@ -1,14 +1,12 @@
 import React, { useState, useEffect } from 'react'
 
 function App() {
-  // Dynamic typing animation text
   const titles = ['Prompt Engineer', 'AI Product Creator', 'AI Operator', 'AI Co-Creator'];
   const [titleIndex, setTitleIndex] = useState(0);
   const [currentText, setCurrentText] = useState('');
   const [isDeleting, setIsDeleting] = useState(false);
   const [typingSpeed, setTypingSpeed] = useState(150);
 
-  // Projects data (Customized for AI Operator / Prompt Engineer)
   const initialProjects = [
     {
       id: 1,
@@ -56,11 +54,9 @@ function App() {
   const [filter, setFilter] = useState('All');
   const [search, setSearch] = useState('');
   
-  // Contact form state
   const [formState, setFormState] = useState({ name: '', email: '', message: '' });
   const [formSubmitted, setFormSubmitted] = useState(false);
 
-  // Handle typing effect
   useEffect(() => {
     let timer;
     const handleType = () => {
@@ -70,7 +66,7 @@ function App() {
         setTypingSpeed(100);
         
         if (currentText === fullTitle) {
-          timer = setTimeout(() => setIsDeleting(true), 1500); // Wait before start deleting
+          timer = setTimeout(() => setIsDeleting(true), 1500);
           return;
         }
       } else {
@@ -88,7 +84,6 @@ function App() {
     return () => clearTimeout(timer);
   }, [currentText, isDeleting, titleIndex]);
 
-  // Form submission
   const handleSubmit = (e) => {
     e.preventDefault();
     if (formState.name && formState.email && formState.message) {
@@ -100,7 +95,6 @@ function App() {
     }
   };
 
-  // Filter projects
   const filteredProjects = projects.filter((project) => {
     const matchesCategory = filter === 'All' || project.category === filter;
     const matchesSearch = project.title.toLowerCase().includes(search.toLowerCase()) || 
@@ -124,7 +118,6 @@ function App() {
       </header>
 
       <div className="container">
-        {/* Hero Section */}
         <section id="hero">
           <div className="hero-content">
             <div className="hero-subtitle">Приветствую, я разработчик</div>
@@ -142,7 +135,6 @@ function App() {
           </div>
         </section>
 
-        {/* Projects Section */}
         <section id="projects">
           <div className="section-header">
             <h2 className="section-title">Портфолио проектов</h2>
@@ -211,7 +203,6 @@ function App() {
           </div>
         </section>
 
-        {/* Contact Section */}
         <section id="contact">
           <div className="section-header">
             <h2 className="section-title">Контакты</h2>
@@ -310,4 +301,5 @@ function App() {
 }
 
 export default App
+
 
