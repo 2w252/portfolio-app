@@ -17,8 +17,8 @@ function App() {
       category: 'AI Products',
       tags: ['React', 'Prompt Engineering', 'AI Co-Creation', 'Vite'],
       image: 'https://images.unsplash.com/photo-1618005182384-a83a8bd57fbe?auto=format&fit=crop&w=600&q=80',
-      demoUrl: '#',
-      gitUrl: '#'
+      demoUrl: 'http://mega-work-portfolio-2026.surge.sh',
+      gitUrl: 'https://github.com/2w252/portfolio-app'
     },
     {
       id: 2,
